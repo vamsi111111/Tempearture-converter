@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temparature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <marquee behavior="" direction="left">This is used to convert temparature from one unit to another. For every conversion you need to click the reset button</marquee>
+    <div>
+    <table align="center" id="tab" cellspacing="10">
+        <caption>Temparature Convertor</caption>
+        <tr>
+            <td colspan="2">
+                <p id="result"> </p>
+            </td>
+        </tr>
+        <tr>
+            <td id="inps"><input type="number" id="i1" placeholder="Enter the Input Here"></td>
+            <td id="inps"><input type="number" id="i2" readonly placeholder="Out will be here"></td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td>
+                <select id="input1">
+                    <option></option>
+                    <option value="Kelvin">Kelvin</option>
+                    <option value="Celcius">Celcius</option>
+                    <option value="Farenheit">Farenheit</option>
+                </select>
+            </td>
+            <td>
+                <select id="input2">
+                    <option></option>
+                    <option value="Kelvin">Kelvin</option>
+                    <option value="Celcius">Celcius</option>
+                    <option value="Farenheit">Farenheit</option>
+                </select>
+            </td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr><tr></tr>
+        <tr></tr>
+        
+        <tr>
+            <td>
+                <button id="convert" onclick="convert()" style="height: auto;border: none; padding: 10px;color: white;border-radius: 23px;font-size: small;background-color: green;">Convert</button>
+            </td>
+            <td><input type="reset" id="clr" name="Clear" onclick="clr()" style="height: auto;border: none; padding: 10px;color: white;border-radius: 23px;font-size: small;background-color:Red;"></td>
+        </tr>
+    </table>
+</div>
+    <script src="code.js"></script>
+</body>
+</html>
